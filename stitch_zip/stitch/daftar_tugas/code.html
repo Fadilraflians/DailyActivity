@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#a589f8",
+                    "on-tertiary-container": "#230062",
+                    "outline": "#747c80",
+                    "on-secondary-fixed-variant": "#006947",
+                    "on-tertiary-fixed": "#000000",
+                    "inverse-surface": "#0b0f10",
+                    "surface-container-highest": "#dce4e8",
+                    "on-background": "#2c3437",
+                    "primary-container": "#4388fd",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#fff7f6",
+                    "primary-dim": "#004fad",
+                    "surface-container-low": "#f0f4f7",
+                    "tertiary-dim": "#5b3fa9",
+                    "tertiary": "#684cb6",
+                    "secondary": "#006d4a",
+                    "surface-container": "#eaeff2",
+                    "outline-variant": "#acb3b7",
+                    "primary-fixed-dim": "#317bef",
+                    "error": "#a83836",
+                    "on-tertiary-fixed-variant": "#2e007c",
+                    "on-secondary": "#e6ffee",
+                    "secondary-container": "#6ffbbe",
+                    "surface-tint": "#005bc4",
+                    "on-tertiary": "#fdf7ff",
+                    "secondary-fixed-dim": "#5fedb0",
+                    "error-container": "#fa746f",
+                    "on-error-container": "#6e0a12",
+                    "tertiary-fixed": "#a589f8",
+                    "on-surface": "#2c3437",
+                    "primary-fixed": "#4388fd",
+                    "secondary-fixed": "#6ffbbe",
+                    "inverse-on-surface": "#9a9d9f",
+                    "on-primary-fixed": "#000000",
+                    "on-secondary-fixed": "#004930",
+                    "on-secondary-container": "#005e3f",
+                    "surface-variant": "#dce4e8",
+                    "surface-bright": "#f7f9fb",
+                    "inverse-primary": "#4d8eff",
+                    "error-dim": "#67040d",
+                    "background": "#f7f9fb",
+                    "on-primary-container": "#000311",
+                    "surface-container-high": "#e3e9ed",
+                    "primary": "#005bc4",
+                    "on-primary-fixed-variant": "#001435",
+                    "surface": "#f7f9fb",
+                    "on-surface-variant": "#596064",
+                    "surface-dim": "#d4dbdf",
+                    "tertiary-fixed-dim": "#987cea",
+                    "on-primary": "#f9f8ff",
+                    "secondary-dim": "#005f40"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 32px rgba(44, 52, 55, 0.04);
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f7f9fb;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f7f9fb] dark:bg-[#1a1c1e] w-full pt-6 pb-2 px-6">
+<div class="flex justify-between items-center max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="portrait of a confident man in his 30s with a warm smile, natural outdoor lighting with soft green foliage background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArBxc0Um5dV65ccjE4yVcZHA1ZU9zEKh7z0ott6pkYA4oZcZvKTby3xo_ixC5b2_jDJjkwpnbCDjmKSWgTANcs1GI0-1gwb4Auh8Y4P-Tyqw6r_YKM9PpZ_MteppXrIitnA6KEFijso75GINQUwBCJzCapUf1WnQYN5H5pUCkJso2tHuUxKw6D3QlmFplXsQATGn_uKzyZf_HCnowXjodZkYit6EF5h-n7LZPsgUHFbrOzizq5sctW94GY_ikXF04nQlTBzHz0ZhQ"/>
+</div>
+<h1 class="font-['Manrope'] font-light tracking-tight text-[#2c3437] dark:text-[#e2e2e6] text-xl">Morning, Julian</h1>
+</div>
+<button class="active:scale-95 transition-transform hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#005bc4] dark:text-[#4388fd] text-2xl" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 pb-32">
+<!-- Editorial Header Section -->
+<section class="mt-8 mb-12">
+<h2 class="text-[3.5rem] font-headline font-extralight tracking-tight leading-none mb-2 text-on-surface">
+                Today’s <span class="font-bold">Focus.</span>
+</h2>
+<p class="font-label text-on-surface-variant text-sm tracking-widest uppercase opacity-60">Tuesday, October 24</p>
+</section>
+<!-- Task Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Work Category -->
+<div class="md:col-span-7 flex flex-col gap-4">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-xl font-headline font-semibold px-2">Work</h3>
+<span class="bg-primary-container/10 text-primary font-label text-[10px] font-bold px-3 py-1 rounded-full">4 ACTIVE</span>
+</div>
+<!-- Task Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 editorial-shadow flex items-start gap-4 group">
+<div class="mt-1 w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-white text-sm" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-headline font-medium text-lg leading-snug">Quarterly Review Presentation</h4>
+<span class="bg-error-container/20 text-error font-label text-[10px] font-bold px-2 py-0.5 rounded-md">HIGH</span>
+</div>
+<div class="flex items-center gap-4 mt-2">
+<div class="flex items-center gap-1 text-on-surface-variant/60 font-label text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                                09:00 AM
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant/60 font-label text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="attachment">attachment</span>
+                                2 Files
+                            </div>
+</div>
+</div>
+</div>
+<!-- Task Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 editorial-shadow flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center cursor-pointer"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-headline font-medium text-lg leading-snug">Client Strategy Sync</h4>
+<span class="bg-primary-container/20 text-primary font-label text-[10px] font-bold px-2 py-0.5 rounded-md">MEDIUM</span>
+</div>
+<div class="flex items-center gap-4 mt-2">
+<div class="flex items-center gap-1 text-on-surface-variant/60 font-label text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                                02:30 PM
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Personal & Health Column -->
+<div class="md:col-span-5 flex flex-col gap-10">
+<!-- Personal Category -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-xl font-headline font-semibold px-2">Personal</h3>
+<span class="bg-tertiary-container/20 text-tertiary font-label text-[10px] font-bold px-3 py-1 rounded-full">2 ITEMS</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-5 editorial-shadow flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center"></div>
+<div class="flex-1">
+<h4 class="font-headline font-medium text-lg leading-snug">Grocery Shopping</h4>
+<div class="flex items-center gap-2 mt-2">
+<span class="bg-tertiary-container text-on-tertiary-container font-label text-[10px] font-bold px-2 py-0.5 rounded-md">IN PROGRESS</span>
+<span class="text-on-surface-variant/60 font-label text-xs italic">Whole Foods</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Health Category -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-xl font-headline font-semibold px-2">Health</h3>
+</div>
+<!-- Health Card with Gradient Touch -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-5 editorial-shadow border-l-4 border-secondary">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-md bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" data-icon="done_all" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline font-medium text-lg leading-snug text-on-surface/50 line-through">Morning Pilates Session</h4>
+<div class="flex items-center gap-2 mt-2">
+<span class="bg-secondary-container text-on-secondary-container font-label text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">COMPLETED</span>
+<span class="text-on-surface-variant/40 font-label text-xs">07:00 AM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-5 editorial-shadow flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center"></div>
+<div class="flex-1">
+<h4 class="font-headline font-medium text-lg leading-snug">Daily Meditation</h4>
+<div class="flex items-center gap-4 mt-2">
+<div class="flex items-center gap-1 text-on-surface-variant/60 font-label text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
+                                    15 mins
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Visual Cue (Asymmetric Detail) -->
+<div class="mt-20 ml-auto w-2/3 md:w-1/3 text-right">
+<p class="font-headline font-light italic text-on-surface-variant/40 text-lg leading-relaxed">
+                “Efficiency is doing things right; effectiveness is doing the right things.”
+            </p>
+</div>
+</main>
+<!-- Floating Action Button - Only for Primary Action -->
+<button class="fixed bottom-28 right-8 w-16 h-16 rounded-full flex items-center justify-center text-white bg-gradient-to-br from-[#005bc4] to-[#4388fd] shadow-xl z-50 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-8 pt-4 bg-[#ffffff]/80 dark:bg-[#1a1c1e]/80 backdrop-blur-xl shadow-[0_-8px_32px_rgba(44,52,55,0.04)] rounded-t-[32px] border-t border-[#acb3b7]/15">
+<a class="flex flex-col items-center justify-center text-[#2c3437]/50 dark:text-[#e2e2e6]/50 p-2 hover:text-[#005bc4] dark:hover:text-[#4388fd] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#005bc4] to-[#4388fd] text-white rounded-full w-12 h-12 mb-1 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="checklist" style="font-variation-settings: 'FILL' 1;">checklist</span>
+<!-- Label hidden for active state as per structure but keeping semantic -->
+<span class="sr-only">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2c3437]/50 dark:text-[#e2e2e6]/50 p-2 hover:text-[#005bc4] dark:hover:text-[#4388fd] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="calendar_today">calendar_today</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide">Calendar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2c3437]/50 dark:text-[#e2e2e6]/50 p-2 hover:text-[#005bc4] dark:hover:text-[#4388fd] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide">Profile</span>
+</a>
+</nav>
+</body></html>
